@@ -22,5 +22,5 @@ vagrant ssh
 sudo docker build -t hopsoft/ruby-mri /vagrant
 ```
 
-Once the build finishes, you can [use the image](#use_the_trusted_image).
+Once the build finishes, you can [use the image](#use-the-trusted-image).
 

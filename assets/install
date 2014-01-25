@@ -1,17 +1,18 @@
 #!/bin/bash
 
 apt-get -qq update
-apt-get -y --force-yes install build-essential
-apt-get -y --force-yes install wget
-apt-get -y --force-yes install libtool
-apt-get -y --force-yes install zlib1g-dev
-apt-get -y --force-yes install libssl-dev
-apt-get -y --force-yes install libreadline6-dev
-apt-get -y --force-yes install libyaml-dev
-apt-get -y --force-yes install ncurses-dev
-apt-get -y --force-yes install libgdbm-dev
-apt-get -y --force-yes install libpq-dev
-apt-get -y --force-yes install libffi-dev
+apt-get -y --force-yes install \
+  build-essential \
+  wget \
+  libtool \
+  zlib1g-dev \
+  libssl-dev \
+  libreadline6-dev \
+  libyaml-dev \
+  ncurses-dev \
+  libgdbm-dev \
+  libpq-dev \
+  libffi-dev
 
 cd /usr/local/src
 wget --quiet ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz

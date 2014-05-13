@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get -qq update
+apt-get -q update
 apt-get -y --force-yes install \
   build-essential \
   wget \
@@ -15,13 +15,13 @@ apt-get -y --force-yes install \
   libffi-dev
 
 cd /usr/local/src
-wget --quiet ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.1.tar.gz
-tar xzf ruby-2.1.1.tar.gz
-cd /usr/local/src/ruby-2.1.1
+wget --quiet ftp://ftp.ruby-lang.org/pub/ruby/2.1/ruby-2.1.2.tar.gz
+tar xzf ruby-2.1.2.tar.gz
+cd /usr/local/src/ruby-2.1.2
 ./configure --prefix=/usr/local/ruby
 make
 make install
-rm /usr/local/src/ruby-2.1.1.tar.gz
+rm /usr/local/src/ruby-2.1.2.tar.gz
 
 cat << 'EOF' > ~/.gemrc
 ---

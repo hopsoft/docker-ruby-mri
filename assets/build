@@ -35,3 +35,6 @@ update:  --no-rdoc --no-ri
 EOF
 
 /usr/local/ruby/bin/gem install bundler
+
+apt-get clean
+rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

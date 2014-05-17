@@ -3,7 +3,7 @@
 ## Use the Trusted Image
 
 ```
-sudo docker run -i -t hopsoft/ruby-mri bash
+sudo docker run -i -t hopsoft/ruby-mri:2.1.2 bash
 ruby -v
 ```
 
